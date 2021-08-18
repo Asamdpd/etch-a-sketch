@@ -23,12 +23,21 @@ body{
     background: LightGray;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
 
   .square{
       
-      border: 1px solid black;
+      border: 0.1px solid black;
+  }
+
+  .fill{
+      background-color: rgb(61, 61, 61);
+  }
+
+  .options{
+      text-align: center;
+      margin-bottom: 1%;
   }
 
  
