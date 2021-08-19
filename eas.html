@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <title>Etch-a-Sketch</title>
     <script src="index.js" defer></script>
+    <link rel="icon" href="etch-a-sketch.png">
     <link rel="stylesheet" type="text/css"  href="eas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="div1">
-    <label id="pointsLabel" for="points">Points</label>
-    <input type="range" id="size" name="size" min="1" max="64" value="16">
+    <div class="header">
+        <h1>Etch-a-Sketch</h1>
     </div>
-
-
-    <div class="container">
+    <div class="grid">
         
-    </div>
-    <div class="options">
-        <input type="color" id="color" value="rgb(61, 61, 61)">
+        <div class="div1">
+            <h2>Options:</h3><br>
+            
+            <label id="pointsLabel" for="points">Points</label>
+            <input type="range" id="size" name="size" min="1" max="64" value="16">
+            
+            <div class="options">
+                <br>
+                <label id="colorLbl">Select Color:</label>
+                <input type="color" id="color" value="rgb(61, 61, 61)">
+                <br>
+                <br>
+                
+                <button id="clearBtn">Clear</button>
+                <br><br>
+                <button id="rainbowBtn">Toggle Rainbow Mode</button>
+            </div>
+        </div>
+        
+
+
+        <div class="container">
+        
+        </div>
     </div>
 </body>
 </html>
